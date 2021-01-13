@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'BigJhon'; 
+    src: url('fonts/BIGJOHN.otf'); 
+   }
+
+   @font-face {
+    font-family: 'SlimJoe'; 
+    src: url('fonts/SlimJoe.otf'); 
+   } 
+
+   @font-face {
+    font-family: 'Lato'; 
+    src: url('fonts/Lato-Bold.ttf'); 
+   } 
+
+   @font-face {
+    font-family: 'Lato_reg'; 
+    src: url('fonts/Lato-Regular.ttf'); 
+   } 
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    color: #fff;
+}
+
+h1,h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 648px;
+    background: url('images/rectangle_1.jpg');
+    background-position: center center;
+    overflow: hidden;
+    }
+
+    /* Навигация */
+.start {
+    padding-top: 36px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+.logo {
+    width: 176px;
+    height: 100px;
+}
+
+.nav_link {
+    color: #fff;
+    font-family: 'Lato';
+    text-decoration: none;
+    font-weight: 700;
+    
+}
+
+.nav_link:hover {
+    color: #111111;
+}
+
+.nav_link:after {
+    content: '/';
+    color: #fff;
+    font-family: "SlimJoe";
+    padding: 0 52px;
+}
+
+.nav_link:last-child:after {
+    content: '';
+    padding: 0;
+}
+
+/* Заголовок */
+
+.title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 512px;
+   
+}
+
+.header_title {
+    font-size: 46px;
+    color: #fff;
+    text-align: center;
+    font-family: "BigJhon";
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 28px;
+}
+
+.under_title {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "SlimJoe";
+    text-align: center;
+}
+
+.h_button {
+    width: 134px;
+    height: 35px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #48bf72;
+    font-weight: 700;
+    font-family: "Lato";
+    text-transform: uppercase;
+    border: 3px solid #48bf72 ;
+    background: transparent;
+    margin-top: 49px;
+}
+
+/* Компонент2 */
+.content1 {
+    background-color: #fff;
+    height: 1051px;
+}
+/* Навигация2 */
+
+.designe_nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+}
+
+.nav_link_des {
+     color: #3c4955;
+    font-weight: 700;
+    font-family: "Lato";
+    width: 125px;
+    height: 32px;
+    border-radius: 2px;
+    background-color: #eaeaea;
+    border: none;
+    margin-right: 12px ;
+}
+
+.nav_link_des:hover {
+    background-color: #48bf72;
+    color: #ffffff;
+}
+
+/* Колонки с картинками */
+
+
+.back {
+    margin-bottom: 37px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
+}  
+
+.col {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.text_img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.text {
+    position: absolute;
+    text-align: center;
+      }
+
+  h3 {
+    font-weight: 700;
+    font-size: 30px;
+    font-family: "Lato";
+  }
+
+.p_text {
+    font-family: "Lato_Reg";
+    }
+
+/* Компонент3 */
+
+.content2 {
+    height: 495px;
+    background: url('images/rectangle_2_copie.jpg');
+    background-size: cover;
+    background-position: center ;
+       }
+
+.empty {
+    width: 50%;
+    height: 495px;
+}
+
+.columns {
+    columns: 2;
+    width: 100%;
+}
+.un_title {
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.p_text1 {
+    font-family: "Lato_Reg";
+    max-width: 403px;
+    line-height: 25px;
+}
+
+.auth {
+    font-size: 14px;
+    line-height: 25px;
+    color: #3c4955;
+    font-family: "Lato";
+    width: 152px;
+    height: 39px;
+    border-radius: 3px;
+    background-color: transparent;
+    border: 2px solid #3c4955;
+    text-transform: uppercase;
+    margin-top: 37px;
+}
